@@ -1,0 +1,24 @@
+<pre>
+    {{ products$  | async | json}}
+</pre>
+@if(products$|async; as products){
+    @for (product of products  ; track product.id) {
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DESCRIPCION</th>
+                    <th>IMAGE</th>
+                    <th>PRECIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>{{ product.id }}</tr>
+                <tr>{{product.description}}</tr>
+                <tr><img class="img" src={{product.image}} alt={{product.title}}></tr>
+                <tr>{{product.price | currency}} </tr>
+            </tbody>
+        </table>
+    }
+}
+    

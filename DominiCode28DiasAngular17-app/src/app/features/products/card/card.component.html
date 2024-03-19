@@ -1,0 +1,14 @@
+<div class="">
+  <a class="" [routerLink]="['/product-details', 2325]">
+    <img class="image" src="{{ product.image }}" alt="{{ product.title }}" />
+  </a>
+  <div class="">
+    <h3>{{ product.category }}</h3>
+    <h2>
+      <a class="" [routerLink]="['/product-details', 2325]">
+        {{ product.title }}
+      </a>
+    </h2>
+    <p class="">{{ product.price | currency}}</p>
+  </div>
+</div>

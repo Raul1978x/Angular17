@@ -1,0 +1,18 @@
+<pre>
+    {{ heroes$ | async | json }}
+</pre>
+@for (hero of [heroes$] ; track $index) {
+<table>
+  <thead>
+    <tr>
+      <th>{{ heroes$ }}</th>
+      <th>DENOMINACION</th>
+      <th>SIGLA</th>
+      <th>DIRECCION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr></tr>
+  </tbody>
+</table>
+}
