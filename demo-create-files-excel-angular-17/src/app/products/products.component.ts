@@ -11,5 +11,6 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductsComponent {
 private readonly ProductsSvc = inject(FakeStoreApiService);
-products$ = this.ProductsSvc.getAllProducts();
+products$ = this.ProductsSvc.getProducts();
+
 }

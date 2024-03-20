@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ImagePosition, Workbook, Worksheet } from 'exceljs';
+import { ImagePosition, Workbook, Worksheet } 
+from 'exceljs';
 import FileSaver, {saveAs} from 'file-saver'; 
 import {
     IDataHeroExcel,
@@ -246,8 +247,8 @@ export class ExcelService {
     }
   }
   /**
-   * Esta función realizará una petición http a la url de la imagen, cuando retorne la imagen capturamos el buffer y lo agregamos al libro,
-   * cuando lo agreguemos retornara un id
+   * Esta función realizará una petición http a la url de la imagen, cuando retorne la imagen capturamos 
+   * el buffer y lo agregamos al libro, cuando lo agreguemos retornara un id
    * @param url
    * @returns id de la imagen insertada en el libro
    */
